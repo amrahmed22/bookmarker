@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Marker</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container my-3 overflow_problem">
+    <section class="">
+        <h1 class="fw-bold text-muted fs-2 my-2">Bookmarker</h1>
+        <hr>
+        <section class="py-2 text-center w-100 fs-4">
+          <div class="bg-light px-2">
+            <h2 class=" p-3">Bookmark your sites</h2>
+            <label for="" class="my-2">Site Name</label>
+            <input type="text" placeholder="BookMark Name " oninput="nameValidation()" class="form-control w-100 m-auto" id="name">
+            <div id="n" class="py-1 bg-danger w-100 mx-auto my-2 text-center fs-5 border border-dark border-2 text-white opacity-0">Name is required</div>
+            <label for=""class="my-2">Site URL</label>
+            <input type="text" placeholder="Website URL " oninput="urlValidation()" class="form-control  w-100 m-auto" id="url">
+            <div id="u" class="py-1 bg-danger w-100 mx-auto my-2 text-center fs-5 border border-dark border-2 text-white opacity-0">Url Field is required</div>
+
+            <button class="btn btn-dark mt-1 mb-3 w-25" onclick="addWebsite()">Submit</button>
+          </div>
+          <div id="arr">
+
+          </div>
+         
+
+            
+        </section>
+
+        <hr>
+    </section>
+</div>
+
+
+    <script src="third.js"></script>
+</body>
+</html>
